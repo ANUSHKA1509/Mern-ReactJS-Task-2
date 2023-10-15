@@ -1,0 +1,59 @@
+
+
+.calculator-container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000; /* All background in black */
+    width: 300px; /* Adjust as needed */
+        height: 500px; /* Adjust as needed */
+        background-color: #000;
+        border-radius: 20px; /* Rounded corners */
+        padding: 20px;
+        box-sizing: border-box; 
+}
+
+
+.display {
+    font-size: 2em;
+    height: 2em; /* Add a fixed height */
+    line-height: 2em; /* Vertically center the text */
+    margin-bottom: 5px;
+    color: #fff; /* Text color white */
+    background-color: #000; /* Display background in black */
+    text-align: right;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Button text color white */
+    border: none;
+    border-radius: 50%; /* Rounded buttons */
+    background-color: #333; /* Numbers background in dark grey */
+}
+
+.clear, .percent, .backspace, .operator {
+    background-color: #808080; /* C, %, backspace and all operators background in medium grey */
+}
+
+.equal {
+    background-color: #FFA500; /* = background in orange */
+}
